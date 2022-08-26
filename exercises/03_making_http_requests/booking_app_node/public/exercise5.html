@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4</title>
+  <script src="./javascripts/exercise4.js"></script>
+  <style>
+    dt {
+        float: left;
+        clear: left;
+      }
+      dt::after {
+        content: ":"; 
+      }
+      dd {
+        margin: 0 0 0 50px; 
+        padding: 0 0 0.5em 0; 
+      }
+      div {
+        background: #ccc;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin-top: 15px
+      }
+      #scheduleSubmit {
+        background: white;
+        color: black;
+        border: 1px darkgrey solid;
+        border-radius: 5px;
+      }
+  </style>
+</head>
+<body>
+  <h1>Schedules</h1>
+  <form method="post" action="/api/bookings">
+    <label for="id">Please select one schedule</label>
+    <select id="id" name="id">
+    </select>
+    <br>
+    <label for="student_email">Email:</label>
+    <input type="email" id="student_email" name="student_email" required>
+    <input id="btnSubmit" type="submit">
+  </form>
+</body>
+</html>
