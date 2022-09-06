@@ -5,6 +5,8 @@ var path = require('path');
 
 var COUNTRIES_PATH = path.join(__dirname, '../data/countries.json');
 
+// route will render the pug template index.pug
+// it's the entry point for our application
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Autocomplete!' });
 });

@@ -1,9 +1,3 @@
-// let header = document.querySelectorAll('header')[1];
-
-// let main = document.querySelector('main');
-// document.body.insertBefore(header, main);
-
-
 window.addEventListener('DOMContentLoaded', (event) => {
   function fixHeader() {
     let header = document.querySelectorAll('header')[1];
