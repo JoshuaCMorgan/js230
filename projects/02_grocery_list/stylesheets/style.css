@@ -1,0 +1,66 @@
+fieldset {
+  border: none;
+}
+html,
+body {
+  background: turquoise;
+  margin: 0;
+  padding: 25px 0;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+main {
+  background: #ffffff;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0, auto;
+  text-align: center;
+  color: #16997c; 
+
+}
+h2 {
+  color: #16997c; 
+  font: normal 40px;
+}
+
+label {
+  color: #16997c;
+  font: bold;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
+  width: 250px;
+  padding: 15px 0;
+  font: normal 20px Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(80, 80, 80, .8);
+  border: 1px solid #91112C;
+  box-shadow: 0 0 1px 1px #780e24;
+  border-radius: 11px;
+  background: linear-gradient(to bottom, #CC183E 0%, #780E24 100%);
+}
+
+ dd {
+  margin: 0;
+}
+input[type="text"] {
+  height: 50px;
+  padding: 5px;
+  margin: 2px;
+  font: normal 24px Georgia, Palatino, serif;
+  text-align: left;
+  border: 1px solid #b2acac;
+  box-sizing: border-box;
+  border-radius: 11px;
+}
+input#quantity {
+  width: 80px;
+}

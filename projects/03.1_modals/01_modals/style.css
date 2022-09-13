@@ -1,0 +1,49 @@
+
+body {
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  }
+h2, a {
+  display: block;
+  text-align: center;
+}
+#modal-layer {
+  /* sets element to fixed position within window: does not move */
+  position: fixed;
+  /* all are zeroes to take up entire screen */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* set to 2 since it is the layer below the top */
+  z-index: 2;
+  background: rgba(0, 0, 0, .3);
+}
+
+#modal {
+  background-color: #ffff;
+  border: 3px solid #666666;
+  border-radius: 10px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  left: 50%;
+  top: 150px;
+  margin: 0 0 0 -190px;
+  width: 350px;
+  height: 80px;
+  padding: 15px;
+  text-align: center;
+  z-index: 3;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
