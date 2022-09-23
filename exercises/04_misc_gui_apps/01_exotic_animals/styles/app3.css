@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #335;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+  flex-basis: 23%;
+}
+
+figcaption {
+  position: absolute;
+  width: 325px;
+  padding: 10px;
+  height: 150px;
+  border-radius: 4px;
+  background: rgba(0, 0, 20, 0.7);
+  margin: -12px 0 0 6px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+img:hover + figcaption {
+  opacity: 1;
+  transition: opacity .5s 1s;
+}
+
+img {
+  width: 100%;
+  border: 10px white solid;
+  border-bottom-width: 15px;
+  border-radius: 3px;
+}
+
+#amazing_animals {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
