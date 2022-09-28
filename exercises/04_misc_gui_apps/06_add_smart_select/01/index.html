@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Used Cars</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header>
+      <h1>Buy Used Cars</h1>
+      <div id="filters"></div>
+    </header>
+    <main>
+      <div id="cars"></div>
+    </main>
+  
+    <script id="filters_template" type="text/x-handlebars-template">
+      <form action="#" method="post" class="side-by-side">
+      <dl>
+        <dt><label for="make" name="make">Make:</label></dt>
+        <dd>
+          <div class="select">
+            <select name="make" id="make_select">
+              <option value="all" selected>All</option>
+              {{#each makes}}
+              <option value="{{this}}">{{this}}</option>
+              {{/each}}
+            </select>
+            <span class="focus"></span>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt><label for="model" name="model">Model:</label></dt>
+        <dd>
+          <div class="select">
+            <select name="model" id="model_select">
+              <option value="all" selected>All</option>
+              {{# each models}}
+              <option value="{{.}}">{{.}}</option>
+              {{/each}}
+            </select>
+            <span class="focus"></span>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt><label for="price" name="price">Price:</label></dt>
+        <dd>
+          <div class="select">
+            <select name="price" id="price_select">
+              <option value="all" selected>All</option>
+              {{# each prices}}
+              <option value="{{.}}">{{.}}</option>
+              {{/each}}
+            </select>
+            <span class="focus"></span>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt><label for="year" name="year">Year:</label></dt>
+        <dd>
+          <div class="select">
+            <select name="year" id="year_select">
+              <option value="all" selected>All</option>
+              {{# each years}}
+              <option value="{{.}}">{{.}}</option>
+              {{/each}}
+            </select>
+            <span class="focus"></span>
+          </div>
+        </dd>
+      </dl>
+      <input type="submit" value="Filter"></input>
+      </form>
+    </script> 
+    <script id="cars_template" type="text/x-handlebars-templates">
+      {{#each cars}}
+        {{> car_template}}
+      {{/each}}
+    </script>
+  
+    <script id="car_template" type="text/x-handlebars-templates">
+      <div class='car'>
+        <figure>
+          <img src="{{image}}">
+        </figure>
+        <h2>{{make }}{{model}}</h2>
+        <p class='year'>Year: {{year}}</p>
+        <p class='price'>Price: ${{price}}</p>
+        <a href="#">Buy</a>
+      </div>
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
