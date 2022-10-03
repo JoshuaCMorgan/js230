@@ -1,4 +1,4 @@
-
+// definitely work on refactoring
 const TakeAction = {
   clearEvent: function () {
     Calculator.updateCurrentNum("0");
