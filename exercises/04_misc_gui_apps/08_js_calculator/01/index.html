@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+  <body>
+   
+      <div id="calculator">
+        <div id="screen">
+          <p class="calculation"></p>
+          <p class="current_num">0</p>
+        </div>
+        
+        <div id="buttons">
+          <button data-action="clearEvent">CE</button>
+          <button data-action="clear">C</button>
+          <button data-action="negate">NEG</button>
+          <button class="key--operator" data-action="divide">/</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="key--operator" data-action="multiply">X</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="key--operator" data-action="subtract">-</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="key--operator" data-action="add">+</button>
+          <button>0</button>
+          <button data-action="decimal">.</button>
+          <button class="key--operator" data-action="modulo">%</button>
+          <button class="key--equal" data-action="calculate">=</button> 
+        </div>
+      </div>
+  <script src="app.js"></script>
+  </body>
+</html>
