@@ -58,7 +58,7 @@ Let's look at Google Flights again.  I am currently in Manila, PH.  But I'll soo
 
 If we open the browser's inspector network tab and reload the page, we notice that it took many requests for this page to actually fully load. Take notice of the number of requests in the bottom left side...40.
 
-<img width="986" alt="Screenshot 2022-11-27 at 11 28 43 AM" src="https://user-images.githubusercontent.com/18130802/204310928-e7631ef9-1b15-4491-91e6-bd3030fa01e0.png">
+<img width="757" alt="Screenshot 2022-11-27 at 11 32 43 AM" src="https://user-images.githubusercontent.com/18130802/204312717-d3812522-8ef8-46cb-b88f-0bfa481502a4.png">
 
 Let's tell google flights that we want to see tickets for Charleston, SC.  Let's type one character at a time while watching the screen and the network tab, particularly, the request number. Let's type "C", 'h', 'a', 'r'.  You will notice that the requests increment to 46.  (There may be some difference since Google listens for many user actions).  You'll also notice that the only noticable difference occuring on the page is the drop-down menu with suggestions. And with each of these keypresses, new suggestions are populated.
 
