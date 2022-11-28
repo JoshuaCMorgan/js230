@@ -6,6 +6,9 @@ A little bit of history will start to bring clarity to  the power of AJAX in the
 
 Let's look at [this website](https://www.tic.com/index.html) from before AJAX.   You'll notice that it has some navigation links.  We'll just look at the "Bios" and "Books".  When you click "Books", you'll notice that the content on the page changes.
 
+<img width="655" alt="Screenshot 2022-11-26 at 5 14 57 PM" src="https://user-images.githubusercontent.com/18130802/204308677-66074030-a438-4ef2-9aed-000dfb653b7d.png">
+
+
 <img src="/Users/joshuamorgan/Library/Application Support/typora-user-images/Screenshot 2022-11-26 at 5.14.57 PM.png" alt="Screenshot 2022-11-26 at 5.14.57 PM" style="zoom:25%;" />
 
 
